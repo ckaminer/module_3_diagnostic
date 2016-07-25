@@ -1,7 +1,8 @@
 class SearchController < ApplicationController
 
   def index
-    # byebug
+    @stations = Search.retrieve_stations(params[:zip])
+    byebug
   end
 
 end
