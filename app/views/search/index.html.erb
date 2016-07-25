@@ -1,0 +1,7 @@
+<% @stations[:fuel_stations].each do |station| %>
+  <h4>Station Name: </h2><%= station[:station_name] %>
+  <h5>Fuel Type: </h2><%= station[:fuel_type_code] %>
+  <h5>Distance: </h2><%= station[:distance] %>
+  <h5>Address: </h2><%= station[:street_address] %>
+  <h5>Access Times: </h2><%= station[:access_days_time] %>
+<% end %>

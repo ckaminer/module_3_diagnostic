@@ -12,6 +12,7 @@ gem "twitter-bootstrap-rails"
 gem "therubyracer"
 gem "less-rails"
 gem 'figaro'
+gem 'faraday'
 
 group :development, :test do
   gem 'byebug'
@@ -26,4 +27,9 @@ end
 
 group :development do
   gem 'web-console', '~> 2.0'
+end
+
+group :test do
+  gem 'webmock'
+  gem 'vcr'
 end
