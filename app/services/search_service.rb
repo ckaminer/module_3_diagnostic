@@ -5,7 +5,7 @@ class SearchService
   end
 
   def get_stations(zip)
-    response = connection.get("/api/alt-fuel-stations/v1/nearest.json?api_key=#{ENV["nrel_api_key"]}&location=#{zip}&zip=#{zip}&fuel_type=ELEC,LPG")
+    response = connection.get("/api/alt-fuel-stations/v1/nearest.json?api_key=#{ENV["nrel_api_key"]}&location=#{zip}&zip=#{zip}&fuel_type=ELEC,LPG&limit=10")
     json = parse(response)
   end
 
