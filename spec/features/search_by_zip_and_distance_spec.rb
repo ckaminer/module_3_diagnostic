@@ -15,6 +15,8 @@ RSpec.feature "user searches stations by zip code and distance" do
         expect(page).to have_content "Access Times"
         expect(page).to_not have_content "Biodiesel"
         expect(page).to_not have_content "Compressed Natural Gas"
+
+        expect(page).to have_link "2"
     end
   end
 end
